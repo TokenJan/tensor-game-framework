@@ -3,6 +3,7 @@ import './App.css';
 
 import Game from './components/Game'
 import Panel from './components/Panel'
+import Rank from './components/Rank'
 
 
 export default class App extends React.Component {
@@ -19,8 +20,11 @@ export default class App extends React.Component {
           </section>
         </div>
         <div id="main">
-          <Game/>
-          <Panel/>
+          <Rank/>
+          <div id="game" style={{display: "flex"}}>
+            <Game/>
+            <Panel/>
+          </div>
         </div>
       </div>
     );
